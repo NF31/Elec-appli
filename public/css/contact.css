@@ -1,0 +1,54 @@
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .contact-info .info {
+   text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+  
+  .contact-info .ho{
+    margin: auto;
+  }
+  .contact-info .info i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .contact-info .info p {
+    margin: 0;
+    line-height: 1.7;
+  }
+  
+  .info h4{
+    margin-bottom: 2%;
+  }
+  
+  .contact-info .info:last-child {
+    margin-left: auto;
+  }
+  
+  .map {
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  
+  .map h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .map iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+  }
