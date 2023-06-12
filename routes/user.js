@@ -17,8 +17,8 @@ router.post('/apropos', aproposController.postApropos)
 router.get('/contact', contactController.getContact)
 router.post('/contact', contactController.postContact)
 
-router.get('/', servicesController.getContact)
-router.post('/', servicesController.postContact)
+router.get('/services', servicesController.getServices)
+router.post('/services', servicesController.postServices)
 
 router.get('/avis', avisController.getAvis)
 router.post('/avis', avisController.postAvis)

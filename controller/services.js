@@ -1,6 +1,6 @@
-exports.getContact = (req, res, next)=>{
-    res.render('contact')
+exports.getServices = (req, res, next)=>{
+    res.render('services')
 }
-exports.postContact = (req, res, next)=>{
+exports.postServices = (req, res, next)=>{
     
 }
