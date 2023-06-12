@@ -31,4 +31,4 @@ mongoose.connect(uri, {
     app.listen(port, ()=>{console.log(`écoute sur le port ${port}`)})
 }).catch((err)=>{
     console.log(err)
-})
+});

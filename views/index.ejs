@@ -43,7 +43,7 @@
       <nav>
         <ul>
           <li>
-            <a href="/" class="acc">Accueil</a>
+            <a href="/index" class="acc">Accueil</a>
           </li>
           <li>
             <a href="/services" class="pareil">Services</a>
@@ -62,13 +62,9 @@
           </li>
         </ul>
       </nav>
-      <button class="toggle-button" onclick="toggleDarkMode()">
-        <i class='bx bx-moon'></i>
-       </button>
-     
+  
       
 
-    </nav>
       <a href="" class="depa">
        
         <i class="bx bx-bell"></i>
@@ -81,7 +77,7 @@
   <section id="accueil">
     <div class="container">
       <h2>Expertise en Électricité pour Tous Vos Besoins</h2>
-      <p>Bienvenue chez Elec Apllication et Ingénierie, votre partenaire fiable et compétent en matière d'électricité. Nous sommes spécialisés dans la fourniture de solutions électriques de haute qualité pour les projets résidentiels, commerciaux et industriels. Notre équipe d'électriciens qualifiés et expérimentés est dévouée à offrir un service exceptionnel à nos clients.</p>
+      <p class="up">Bienvenue chez Elec Apllication et Ingénierie, votre partenaire fiable et compétent en matière d'électricité. Nous sommes spécialisés dans la fourniture de solutions électriques de haute qualité pour les projets résidentiels, commerciaux et industriels. Notre équipe d'électriciens qualifiés et expérimentés est dévouée à offrir un service exceptionnel à nos clients.</p>
       <div class="services-list">
         <div class="service">
           <img src="/public/img/comment-concevoir-une-installation-electrique-aux-normes.jpg" alt="Service 1">
@@ -99,7 +95,7 @@
           <p>Nous proposons des solutions d'économie d'énergie et de mises à niveau énergétiques pour réduire votre consommation électrique et optimiser l'efficacité énergétique de votre bâtiment. Que ce soit l'installation de panneaux solaires, l'éclairage LED ou la gestion intelligente de l'énergie, nous avons les compétences nécessaires pour vous aider.</p>
         </div>
       </div>
-      <a href="/services" class="cta-button">Découvrez Nos Services</a>
+      <a href="/services" class="cta-button dec">Découvrez Nos Services</a>
     </div>
   </section>
 
@@ -129,11 +125,7 @@
       </li>
     </ul>
       
-      
-     
-    
-     
-      
+
         <a href="/services"class="cta-button vp">
              Voir plus
         </a>
@@ -176,6 +168,12 @@
       <input type="email" name="email" placeholder="Votre adresse e-mail" required>
       <textarea name="message" placeholder="Votre message" required></textarea>
       <button type="submit">Envoyer</button>
+      <div class="popup" id="popup">
+        <img src="/public/img/check.jpg" alt="">
+        <h2>Merci!</h2>
+        <p>Votre devis a été recu avec succcès!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
     </form>
   </section>
 
@@ -185,12 +183,12 @@
     <div class="container">
       <div class="contact-info">
        
-        <p>Pour toute demande de renseignements ou pour prendre rendez-vous, n'hésitez pas à nous contacter ,Vous pouvez nous appeler au 04 93 33 15 78 ou nous rendre visite dans nos locaux.
-          Nous sommes ouverts au public du lundi au vendredi de 8h30 à 12h et de 14h30 à 18h (vendredi 17h).</p>
+        <p class="br">Pour toute demande de renseignements ou pour prendre rendez-vous, n'hésitez pas à nous contacter. Vous pouvez nous appeler au  06.41.08.58.11.
+     </p>
         <ul>
-          <li><i class="fas fa-map-marker-alt"></i> 30 rue des Graves bât B, 31780 Castelginest</li>
-          <li><i class="fas fa-phone-alt"></i>  06.41.08.58.11</li>
-          <li><i class="fas fa-envelope"></i> fagoua_placide@hotmail.com</li>
+          <li><i class="bx bx-map"></i> 30 rue des Graves bât B, 31780 Castelginest</li>
+          <li><i class="bx bx-phone"></i>  06.41.08.58.11</li>
+          <li><i class='bx bx-envelope'></i> fagoua_placide@hotmail.com</li>
         </ul>
       </div>
     
@@ -209,10 +207,10 @@
       </div>
       <div class="footer-links">
         <ul class="toof">
-          <li><a href="/index">Accueil</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/apropos">A propos</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="/index" class="pareil" >Accueil</a></li>
+          <li><a href="/services" class="pareil">Services</a></li>
+          <li><a href="/apropos" class="pareil">A propos</a></li>
+          <li><a href="/contact" class="pareil">Contact</a></li>
         </ul>
       </div>
       <div class="footer-contact">
@@ -227,5 +225,6 @@
       <p>&copy; 2023 ELEC APPLICATION ETINGENIERIE - Tous droits réservés</p>
     </div>
   </footer>
+  <script src="/public/js/script.js"></script>
 </body>
 </html>

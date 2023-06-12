@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/public/css/contact.css">
 </head>
 <body>
-  <header>
+   <!-- <header>
     <div class="premierept">
       <div class="add">
           <i class="bx bx-map">
@@ -36,14 +36,14 @@
 
     <div class="secondpt">
       <a href="/">
-        <img src='/public/img/elec-appli.png'  alt=""  class="logo"/>
+        <img src='./public/img/elec-appli.png'  alt=""  class="logo"/>
        
       </a>
 
       <nav>
         <ul>
           <li>
-            <a href="/" class="acc">Accueil</a>
+            <a href="/index" class="acc">Accueil</a>
           </li>
           <li>
             <a href="/services" class="pareil">Services</a>
@@ -62,9 +62,7 @@
           </li>
         </ul>
       </nav>
-      <button class="toggle-button" onclick="toggleDarkMode()">
-        <i class='bx bx-moon'></i>
-       </button>
+   
      
       
 
@@ -76,15 +74,17 @@
       </a>
     </div>
   </header>
-    
-      <section class="contact">
+  
 
+    -->
+      <section class="contact">
+ <!--
         <h2>Des questions ? Un besoin ?
             Contactez-nous !</h2>
 
 
             <div class="contact-info">
-                <div class="info">
+                 <div class="info">
                   <i class="fas fa-map-marker-alt"></i>
                 
                 <h4>Adresse :</h4>
@@ -110,27 +110,60 @@
                     06.41.08.58.11  </p>
                 </div>
               </div>
-             
+  
+
+    -->         
               
               <div class="map">
-                <h2>Localisation</h2>
-                <img src="https://maps.googleapis.com/maps/api/staticmap?center=30+rue+des+Graves+bat+B,31780+Castelginest&zoom=15&size=400x400&markers=color:red%7C30+rue+des+Graves+bat+B,31780+Castelginest" alt="Map">
-              </body>
+              <h2>Contactez-nous</h2>
+                <form action="/envoyer-message" method="POST">
+              <!--      <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                  </div>
+                  <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                  </div>
+                  <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>
+
+                
+
+                --> 
+                  <button type="submit " class="btn" onclick="openPopup()">Envoyer</button>
+                  <div class="popup" id="popup">
+                    <img src="/public/img/check.jpg" alt="">
+                    <h2>Merci!</h2>
+                    <p>Votre message a été envoyé avec succcès!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                  </div>
+                </form>
+                
+            
               </div>
       </section>
+
+<!--
 
 
       <footer>
         <div class="foot">
           <div class="gol">
-            <img src="./img/elec-appli.png" alt="" class="app">
+            <img src="./public/img/elec-appli.png" alt="" class="app">
           </div>
           <div class="footer-links">
             <ul class="toof">
-              <li><a href="./index.html">Accueil</a></li>
-              <li><a href="./services.html">Services</a></li>
-              <li><a href="./apropos.html">A propos</a></li>
-              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./" class="pareil">Accueil</a></li>
+              <li><a href="./services" class="pareil">Services</a></li>
+              <li><a href="./apropos" class="pareil">A propos</a></li>
+              <li><a href="./contact" class="pareil">Contact</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -145,7 +178,7 @@
           <p>&copy; 2023 ELEC APPLICATION ET INGENIERIE - Tous droits réservés</p>
         </div>
       </footer>
-
-      <script src="./script.js"></script>
+-->
+      <script src="/public/js/script.js"></script>
 </body>
 </html>

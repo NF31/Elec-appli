@@ -1,3 +1,8 @@
+.contact{
+  background: crimson;
+  display: flex;
+  align-items: center;justify-content: center;
+}
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -32,13 +37,6 @@
   .contact-info .info:last-child {
     margin-left: auto;
   }
-  
-  .map {
-    width: 100%;
-    height: 400px;
-    margin-top: 40px;
-    text-align: center;
-  }
 
   
   .map h2 {
@@ -46,9 +44,120 @@
     color: #333;
   }
   
-  .map iframe {
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
     width: 100%;
-    max-width: 800px;
-    height: 450px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Ajouter des styles supplémentaires pour le dark mode */
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    background-color: #555;
+    color: #fff;
+    border-color: #777;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .btn{
+    padding: 10px 60px;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    background: #000000;
+    color: #ffffff;
+    outline: none;
+  }
+
+  .popup{
+    width: 400px;
+background: #ffffff;
+    border-radius: 6px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    position: absolute;
+text-align: center;
+padding: 0 30px 30px;
+visibility: hidden;
+transition: transform 0.4s, top 0.4s;
+  }
+  .open-popup{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+  }
+  .popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+  }
+
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
