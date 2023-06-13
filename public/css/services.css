@@ -23,6 +23,7 @@
   
   #services .container {
     margin: 0 auto;
+    margin-top: 5%;
   }
  
  .nc{
@@ -45,7 +46,9 @@
   gap: 4%;
  }
 
-
+.cf{
+  display: none;
+}
 
   /* styles.css */
 
@@ -96,3 +99,31 @@
     animation: fade-in 1s ease-in-out;
   }
   
+  @media screen and (max-width: 991px) {
+    .cour {
+    display: block;   
+  }
+
+  #services p {
+    margin: auto;
+    font-size: 18px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+  .gauche, .droite {
+      border: 2px solid rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      border-radius: 8px;
+      width: 57%;
+      line-height: 1.7;
+      margin: auto;
+      margin-bottom: 4%;
+  }
+  .cf {
+    display: block;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 4%;
+    border-radius: 8px;
+}
+  }

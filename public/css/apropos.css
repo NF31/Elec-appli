@@ -22,3 +22,27 @@
 .elec{
     width: 500px;
 }
+@media screen and (max-width: 991px) {
+    #a-propos .content {
+         display: block; 
+    
+    }
+
+    .apple{
+        margin-left: 32%;
+    margin-bottom: 4%;
+    }
+    .golo {
+    position: initial;
+    margin-bottom: 5%;
+}
+
+.elec {
+    display: flex;
+    width: 500px;
+    border-radius: 8px;
+    margin: auto;
+}
+
+
+}
