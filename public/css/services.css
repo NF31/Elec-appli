@@ -7,13 +7,11 @@
   
   #services h2 {
     font-size: 32px;
-    color: #333;
     margin-bottom: 30px;
   }
   
   #services p {
     font-size: 18px;
-    color: #666;
     margin-bottom: 10px;
   }
   
@@ -53,14 +51,12 @@
   /* styles.css */
 
 #why-us {
-    background-color: #fff;
     padding: 50px;
     text-align: center;
   }
   
   #why-us h2 {
     font-size: 32px;
-    color: #333;
     margin-bottom: 20px;
   }
   
@@ -72,14 +68,13 @@
   }
   
   #why-us .feature i {
-    font-size: 24px;
-    color: #333;
+   
     margin-right: 10px;
   }
   
   #why-us .feature p {
     font-size: 18px;
-    color: #666;
+    
     margin-bottom: 0;
   }
   
@@ -107,8 +102,8 @@
   #services p {
     margin: auto;
     font-size: 18px;
-    width: 70%;
-    margin-bottom: 20px;
+    width: 85%;
+    margin-bottom: 25px;
 }
   .gauche, .droite {
       border: 2px solid rgba(0, 0, 0, 0.4);
@@ -126,4 +121,21 @@
     margin-bottom: 4%;
     border-radius: 8px;
 }
+
+.foot {
+  display: block;
+  text-align: center;
+  
+
   }
+
+  .gol{
+    margin-top: -7%;
+    margin-bottom: 7%;
+
+  }
+
+  .toof li {
+    margin-bottom: 4%;
+}
+}
