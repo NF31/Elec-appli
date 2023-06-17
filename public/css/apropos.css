@@ -2,9 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15%;
+    gap: 1%;
 }
 
+.freezer:checked ~ nav .navbar-toggler {
+    margin-top: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 1%;
+    right: 5%;
+}
 .golo{
     position: absolute;
     top: 73%;
@@ -23,26 +30,48 @@
     width: 500px;
 }
 @media screen and (max-width: 991px) {
+
+    .scorpion {
+        right: 3%;}
+
     #a-propos .content {
          display: block; 
     
     }
 
     .apple{
+        margin-top: 7%;
+       
         margin-left: 32%;
-    margin-bottom: 4%;
+        margin-bottom: 4%
     }
     .golo {
+        margin-top: 8%;
     position: initial;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+    width: 100%;
 }
+
+.freezer:checked ~ nav .navbar-toggler {
+    margin-top: 30px;
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    right: 11%;
+
 
 .elec {
     display: flex;
-    width: 500px;
+    width: 100%;
     border-radius: 8px;
     margin: auto;
 }
 
 
+}
+
+@media screen and (max-width: 450px) {
+    .apple {
+     
+        margin-left: 13%;}
 }
