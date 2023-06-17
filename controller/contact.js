@@ -31,7 +31,7 @@ exports.postContact = (req, res, next)=>{
             console.log(error);
           } else {
             console.log('Message envoyé: ' + info.response + ' contenue du message : ' + req.body.message + ' email : ' + req.body.email);
-            res.redirect('/location');
+            res.redirect('/');
           }
         });
 }
