@@ -1,77 +1,88 @@
-#a-propos .content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1%;
+#a-propos .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
 }
 
 .freezer:checked ~ nav .navbar-toggler {
+  margin-top: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 1%;
+  right: 5%;
+}
+.golo {
+  position: absolute;
+  top: 73%;
+  width: 480px;
+  margin: auto;
+  display: flex;
+}
+
+.image-container img:hover {
+  z-index: 2;
+  transform: scale(1.3);
+}
+
+.elec {
+  width: 500px;
+}
+@media screen and (max-width: 991px) {
+  .scorpion {
+    right: 3%;
+  }
+  #a-propos {
+    margin-top: 10%;
+  }
+  #a-propos .content {
+    display: block;
+  }
+
+  .apple {
+    margin-top: 7%;
+
+    margin-left: 32%;
+    margin-bottom: 4%;
+  }
+  .golo {
+    margin-top: 8%;
+    position: initial;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+
+  .freezer:checked ~ nav .navbar-toggler {
     margin-top: 30px;
     position: absolute;
     z-index: 1;
     top: 1%;
-    right: 5%;
-}
-.golo{
-    position: absolute;
-    top: 73%;
-    width: 480px;
-   margin: auto;
-   display: flex;
-}
-
-
-.image-container img:hover{
-    z-index: 2;
-    transform: scale(1.3);
-}
-
-.elec{
-    width: 500px;
-}
-@media screen and (max-width: 991px) {
-
-    .scorpion {
-        right: 3%;}
-
-    #a-propos .content {
-         display: block; 
-    
-    }
-
-    .apple{
-        margin-top: 7%;
-       
-        margin-left: 32%;
-        margin-bottom: 4%
-    }
-    .golo {
-        margin-top: 8%;
-    position: initial;
-    margin-bottom: 10%;
-    width: 100%;
-}
-
-.freezer:checked ~ nav .navbar-toggler {
-    margin-top: 30px;
-    position: absolute;
-    z-index: 1;
-    top: 12%;
     right: 11%;
-
-
-.elec {
-    display: flex;
+  }
+  .elec {
     width: 100%;
+    margin-top: 8%;
+    margin-bottom: -15%;
     border-radius: 8px;
-    margin: auto;
-}
-
-
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .apple {
-     
-        margin-left: 13%;}
-}}
+  #a-propos {
+    margin-top: 14%;
+  }
+
+  .apple {
+    margin-top: 7%;
+    margin-left: 21%;
+  }
+
+  .elec {
+    margin-top: 8%;
+    position: initial;
+    margin-bottom: 10%;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+}

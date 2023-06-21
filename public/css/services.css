@@ -154,6 +154,8 @@
 }
 
 @media screen and (max-width: 650px) {
+  #services {
+    margin-top: 15%;}
   #services p {
     width: 100%;
   }
