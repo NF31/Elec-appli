@@ -145,24 +145,10 @@
                     <label for="message">Message :</label>
                     <textarea id="message" name="message" required></textarea>
                   </div>
-
-                
-
-          <div class="akat">
-            <input type="checkbox" id="click" />
-            <button type="submit" class="clickme">Clik me bro!</button> <!-- is j'ai remplacer label par button pour envoyer le formulaire  -->
-            <div class="kagami">
-              <div class="eren">
-                <h2>Merci !</h2>
-                <label for="click" class="fas fa-times"></label>
-              </div>
-              <label for="click" class="fas fa-check"></label>
-              <p>Votre message a été envoyé avec succcès!</p>
-              <div class="line"></div>
-              <label for="click" class="close-btn">OK</label>
-            </div>
-          </div>
-
+                  <button type="submit" class="clickme">Clik me bro!</button> <!-- is j'ai remplacer label par button pour envoyer le formulaire  -->
+                  <% if (typeof message_envoyer !== 'undefined') { %>
+                    <p id="message_envoyer"><%= message_envoyer %></p>  
+                <% } %>  
         </form>
       </div>
     </section>
