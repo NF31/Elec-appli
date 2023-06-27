@@ -22,7 +22,7 @@ exports.postIndex = (req, res, next)=>{
         const mailOptions = {
           from: req.body.email,
           to: monMail,
-          subject: `Message de ${req.body.nom}`,
+          subject: `Devis de ${req.body.nom}`,
           text: req.body.message
         };
       
