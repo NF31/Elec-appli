@@ -67,6 +67,14 @@ input[type=submit]:hover{
     text-align: center;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }
+.full{
+    width: 80%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .full .avis{
     width: fit-content;
     margin: 15px;
@@ -75,12 +83,14 @@ input[type=submit]:hover{
     justify-content: center;
     flex-direction: column;
     background-color: rgb(255, 247, 237);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
 }
-.full{
-    width: 80%;
-    margin: 15px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.full .avis p{
+    margin-bottom: 0;
+    margin: 5px 10px;
+}
+.full .avis h4{
+    margin-bottom: 0;
+    margin: 5px 10px;
 }
