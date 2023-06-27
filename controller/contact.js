@@ -23,7 +23,7 @@ exports.postContact = (req, res, next)=>{
           from: req.body.email,
           to: monMail,
           subject: `Message de ${req.body.name}`,
-          text: req.body.message
+          text: req.body.message + req.body.tel
         };
       
         transporter.sendMail(mailOptions, (error, info) => {
