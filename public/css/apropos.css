@@ -20,6 +20,9 @@
   display: flex;
 }
 
+.apple{
+  margin-left: 29%;
+}
 .image-container img:hover {
   z-index: 2;
   transform: scale(1.3);
