@@ -26,7 +26,6 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: #485156;
-  margin-bottom: 3%;
   height: 65px;
   color: #ffffff;
 }
@@ -82,14 +81,13 @@ a {
 .secondpt {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   font-size: 20px;
   text-align: center;
-  gap: 30%;
 }
 
 .logo {
   width: 120px;
-  margin-left: 45%;
 }
 
 .navbar{
@@ -162,6 +160,7 @@ nav .nav-list .nav-link {
 nav .navbar-toggler {
   display: none;
   top: 6%;
+  right: 30px;
   position: absolute;
   height: min-content;
   margin: 18px -10px 0 0;
