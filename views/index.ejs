@@ -172,7 +172,7 @@
 
   <section class="devis">
     <h2>Devis Gratuit</h2>
-    <form>
+    <form method="POST">
       <input type="text" name="nom" placeholder="Votre nom" required>
       <input type="email" name="email" placeholder="Votre adresse e-mail" required>
       <textarea name="message" placeholder="Votre message" required></textarea>
@@ -184,6 +184,9 @@
         <button type="button" onclick="closePopup()">OK</button>
       </div>
     </form>
+    <% if (typeof message_envoyer !== 'undefined') { %>
+      <p id="message_envoyer"><%= message_envoyer %></p>  
+  <% } %>  
   </section>
 
   

@@ -95,7 +95,15 @@ a {
   margin-left: 7%;
 }
 
-
+#message_envoyer{
+  display: block;
+  width: fit-content;
+  color: green;
+  padding: 14px 8px;
+  margin: 25px auto;
+  text-align: center;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
 
 nav {
   display: flex;
