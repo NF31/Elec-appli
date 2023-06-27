@@ -1,0 +1,86 @@
+form{
+    margin: 25px auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: max-content;
+    padding: 10px 20px;
+    background-color: rgb(255, 247, 237);
+}
+form h2{
+    font-size: 1.6rem;
+    margin: 15px auto;
+    text-align: center;
+}
+form div:not(.stars){
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form div label{
+    margin-right: 10px;
+    width: 150px;
+}
+form div input, textarea{
+    display: block;
+    padding: 5px;
+    width: 200px;
+    border: none;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    background-color: white;
+}
+.stars{
+    width: 250px;
+}
+input[type=submit]{
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px 8px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: background-color 0.4s, color 0.4s;
+}
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}
+#message_avis{
+    display: block;
+    width: fit-content;
+    color: green;
+    padding: 14px 8px;
+    margin: 25px auto;
+    text-align: center;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+#err{
+    display: block;
+    width: fit-content;
+    color: red;
+    padding: 14px 8px;
+    margin: 25px auto;
+    text-align: center;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+.full .avis{
+    width: fit-content;
+    margin: 15px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 247, 237);
+}
+.full{
+    width: 80%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
