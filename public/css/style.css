@@ -465,6 +465,7 @@ p {
 
 .devis input[type="text"],
 .devis input[type="email"],
+.devis input[type="number"],
 .devis textarea {
   width: 100%;
   padding: 10px;
