@@ -84,12 +84,12 @@ a {
   align-items: center;
   font-size: 20px;
   text-align: center;
-  gap: 30%;
+width: fit-content;
+margin: auto;
 }
 
 .logo {
   width: 120px;
-  margin-left: 45%;
 }
 
 .navbar{
@@ -155,6 +155,7 @@ nav .nav-list .nav-link {
 
   nav .navbar-toggler {
       display: grid !important;
+      right: 16%;
   }
 
 }
@@ -619,7 +620,7 @@ footer {
     top: 9%;}
 
   #accueil{
-    margin-top: 8%;
+    margin-top: 10%;
   }
 
   #accueil h2{
@@ -798,7 +799,7 @@ display: block;}
 }
 @media screen and (max-width: 555px){
   #accueil {
-    margin-top: 16%;
+    margin-top: 22%;
 }
   .gol {
     margin-bottom: 7%;
