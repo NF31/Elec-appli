@@ -37,7 +37,10 @@ form div input, textarea{
     background-color: white;
 }
 .stars{
-    width: 250px;
+    width: 200px;
+    background-color: #303030;
+    padding: 8px;
+    border-radius: 4px;
 }
 input[type=submit]{
     width: 90%;
@@ -112,12 +115,30 @@ input[type=submit]:hover{
 }
 @media screen and (max-width: 850px) {
     .full{
-        width: 95%;
+        width: 97%;
     }
     #err{
         margin: 150px auto 15px;
     }
     form{
         margin: 150px auto 15px;
+        width: 90%;
     }
+    form div:not(.stars){
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 90%;
+        margin: 15px auto;
+    }
+    form div label {
+        margin-right: 5px;
+        width: 125px;
+    }
+    form div input, textarea{
+        width: 98%;
+        margin: 2px auto;
+        border: none;
+    }
+    
 }

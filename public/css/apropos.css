@@ -73,8 +73,9 @@
   }
 
   .apple {
-    margin-top: 7%;
-    margin-left: 21%;
+    display: block;
+    margin: auto;
+    text-align: center;
   }
 
   .elec {
