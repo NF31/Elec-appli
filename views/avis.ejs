@@ -16,8 +16,10 @@
       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
       <!--  Icons --->
       <link rel="stylesheet" href="/public/css/apropos.css">
-</head>
+      <link rel="stylesheet" href="/public/css/avis.css">
 
+</head>
+<body>
 <header>
   <div class="premierept">
    <div class="add">
@@ -52,33 +54,84 @@
 
      <ul class="nav-list">
          <li class="nav-item">
-           <a href="/" class="pareil">Accueil</a>
-            
+           <a href="/" class="pareil">Accueil</a>           
          </li>
+
          <li class="nav-item">
-           <a href="./services" class="pareil">Service</a>
-             
+           <a href="./services" class="pareil">Service</a>  
          </li>
+
          <li class="nav-item">
-           <a href="./apropos" class="pareil">A Propos</a>
-            
+           <a href="./apropos" class="pareil">A Propos</a> 
          </li>
+
          <li class="nav-item">
-           <a href="./avis" class="pareil">Avis</a>
-             
+           <a href="./avis" class="pareil">Avis</a>  
          </li>
+
          <li class="nav-item">
            <a href="./contact" class="pareil">Contact</a>
          </li>
      </ul>
 
  </nav>
-
-
-
-
- 
+</header>
+  <% if(typeof message_avis != 'undefined'){ %>
+    <div id="message_avis"><%= message_avis %></div>
+  <% }else if(typeof err != 'undefined'){ %>
+    <div id="err"><%= err %></div>
+  <% }else{ %>
+    <form method="POST">
+      <h2>Laissez nous un Commentaire !</h2>
+      
+      <div>
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" required>
+      </div>
+      <div>
+        <label for="prenom">Prénom :</label>
+        <input type="text" name="prenom" id="prenom" required>
+      </div>
+      <div>
+        <label for="email">Email :</label>
+        <input type="text" name="email" id="email" required>
+      </div>
+      <div class="stars1">
+        <label for="Etoiles">Étoiles :</label>
+        <div class="stars">
+          <input style="display: none;" type="radio" id="etoile1" name="stars" value="1" required>
+          <label for="etoile1">&#9733;</label>
+          <input style="display: none;" type="radio" id="etoile2" name="stars" value="2" required>
+          <label for="etoile2">&#9733;</label>
+          <input style="display: none;" type="radio" id="etoile3" name="stars" value="3" required>
+          <label for="etoile3">&#9733;</label>
+          <input style="display: none;" type="radio" id="etoile4" name="stars" value="4" required>
+          <label for="etoile4">&#9733;</label>
+          <input style="display: none;" type="radio" id="etoile5" name="stars" value="5" required>
+          <label for="etoile5">&#9733;</label>
+        </div>
+      </div>
+      <div>
+        <label for="comment">Commentaire :</label>
+        <textarea name="comment" id="comment" style="resize: vertical;"></textarea>
+      </div>
+      <input type="submit" value="Valider">
+    </form>
+  <% } %>
+  <section class="full">
+    <% if(allAvis.length === 0){ %>
+    <h2>Aucun Avis pour le moment</h2>
+    <% }else{ %>
+      <% allAvis.forEach(avis => { %>
+        <section class="avis">
+          <h4><%= avis.nom %> <%= avis.prenom %></h4>
+          <h4><%= avis.stars %></h4>
+          <p><%= avis.comment %></p>        
+        </section>
+      <% }); %>
+    <% } %>
+  </section>
   
 
- </div>  
-</header>
+ </body>
+ </html>
