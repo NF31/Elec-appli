@@ -133,6 +133,7 @@ input[type=submit]:hover{
     }
     #err{
         margin: 150px auto 15px;
+        padding: 14px 0px;
     }
     form{
         margin: 150px auto 15px;
@@ -153,6 +154,11 @@ input[type=submit]:hover{
         width: 98%;
         margin: 2px auto;
         border: none;
+    }
+    #message_avis{
+        margin: 150px auto 15px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.45);
+        padding: 14px 0px;
     }
     
 }

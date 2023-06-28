@@ -272,7 +272,9 @@ transition: transform 0.4s, top 0.4s;
   }
   @media screen and (max-width:991px) {
 
-   
+   .app{
+    width: 200px;
+   }
     .scorpion {
     right: 9%;
     
@@ -310,5 +312,5 @@ h2 {
       margin-top: 19%;
   }
     footer {
-      margin-top: 8%;} 
+      margin-top: 0;} 
   }
