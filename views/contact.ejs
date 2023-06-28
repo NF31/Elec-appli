@@ -47,46 +47,57 @@
      </div>
  
      <div class="secondpt">
-       <a href="/" class="boss">
-         <img src='/public/img/elec-appli.png'  alt=""  class="logo"/>
-       </a>
- 
-       <input type="checkbox" id="toggle" class="freezer">
- 
-       <nav>
-         <label class="navbar-toggler" for="toggle">
-             <span class="bar"></span>
-             <span class="bar"></span>
-             <span class="bar"></span>
-         </label>
- 
-         <ul class="nav-list">
-             <li class="nav-item">
-               <a href="/" class="pareil">Accueil</a>
-                
-             </li>
-             <li class="nav-item">
-               <a href="./services" class="pareil">Services</a>
-                 
-             </li>
-             <li class="nav-item">
-               <a href="./apropos" class="pareil">A Propos</a>
-                
-             </li>
-             <li class="nav-item">
-               <a href="./avis" class="pareil">Avis</a>
-                 
-             </li>
-             <li class="nav-item">
-               <a href="./contact" class="pareil">Contact</a>
-             </li>
-         </ul>
- 
-     </nav>
- 
-     
+      <a href="/" class="boss">
+        <img src='/public/img/elec-appli.png'  alt=""  class="logo"/>
+      </a>
+
+      <input type="checkbox" id="toggle" class="freezer">
+
+      <nav>
+
+        <!--
+              <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        -->
     
-     </div>  
+
+        <ul class="nav-list mobile-nav">
+            <li class="nav-item">
+              <a href="/" class="pareil">Accueil</a>
+               
+          </li>
+            <li class="nav-item">
+              <a href="./services" class="pareil">Services</a>
+                
+            </li>
+            <li class="nav-item">
+              <a href="./apropos" class="pareil"> À Propos</a>
+               
+            </li>
+            <li class="nav-item">
+              <a href="./avis" class="pareil">Avis</a>
+                
+            </li>
+            <li class="nav-item">
+              <a href="./contact" class="pareil">Contact</a>
+            </li>
+        </ul>
+
+
+        <button class="hamburger ">
+          <div class="bar"></div>
+        </button>
+    </nav>
+
+
+
+  
+     
+   
+    </div>  
    </header>
  
     <section class="contact">
@@ -145,7 +156,7 @@
                     <label for="message">Message :</label>
                     <textarea id="message" name="message" required></textarea>
                   </div>
-                  <button type="submit" class="clickme">Clik me bro!</button> <!-- is j'ai remplacer label par button pour envoyer le formulaire  -->
+                  <button type="submit" class="clickme">Envoyer !</button> <!-- is j'ai remplacer label par button pour envoyer le formulaire  -->
                   <% if (typeof message_envoyer !== 'undefined') { %>
                     <p id="message_envoyer"><%= message_envoyer %></p>  
                 <% } %>  
@@ -163,7 +174,7 @@
           <ul class="toof">
             <li><a href="./" class="pareil">Accueil</a></li>
             <li><a href="/services" class="pareil">Services</a></li>
-            <li><a href="/apropos" class="pareil">A propos</a></li>
+            <li><a href="/apropos" class="pareil"> À Propos</a></li>
             <li><a href="/contact" class="pareil">Contact</a></li>
           </ul>
         </div>
@@ -179,6 +190,6 @@
         <p>&copy; 2023 ELEC APPLICATION ET INGENIERIE - Tous droits réservés</p>
       </div>
     </footer>
-    <script src="/public/js/script.js"></script>
+    <script src="/public/js/index.js"></script>
   </body>
 </html>
