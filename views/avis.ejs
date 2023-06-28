@@ -97,7 +97,7 @@
         <input type="text" name="email" id="email" required>
       </div>
       <div class="stars1">
-        <label for="Etoiles">Étoiles :</label>
+        <label>Étoiles :</label>
         <div class="stars">
           <input style="display: none;" type="radio" id="etoile1" name="stars" value="1" required>
           <label for="etoile1">&#9733;</label>
@@ -110,6 +110,7 @@
           <input style="display: none;" type="radio" id="etoile5" name="stars" value="5" required>
           <label for="etoile5">&#9733;</label>
         </div>
+        <script src="/public/js/stars.js"></script>
       </div>
       <div>
         <label for="comment">Commentaire :</label>
@@ -118,14 +119,25 @@
       <input type="submit" value="Valider">
     </form>
   <% } %>
-  <section class="full">
+ 
     <% if(allAvis.length === 0){ %>
     <h2>Aucun Avis pour le moment</h2>
     <% }else{ %>
+    <h2>Nos Avis</h2>
+    <hr>
+    <section class="full">
+
       <% allAvis.forEach(avis => { %>
         <section class="avis">
           <h4><%= avis.nom %> <%= avis.prenom %></h4>
-          <h4><%= avis.stars %></h4>
+          <div class="etoile">
+            <% for(let i = 0; i < avis.stars ; i++){ %>
+              <h4 style="color: yellow;">&#9733;</h4>
+            <% } %>
+            <% for(let i = 0; i < 5 - avis.stars ; i++){ %>
+              <h4 style="color: white;">&#9733;</h4>
+            <% } %>
+          </div>
           <p><%= avis.comment %></p>        
         </section>
       <% }); %>

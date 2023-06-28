@@ -26,7 +26,6 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: #485156;
-  margin-bottom: 3%;
   height: 65px;
   color: #ffffff;
 }
@@ -82,10 +81,15 @@ a {
 .secondpt {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   font-size: 20px;
   text-align: center;
+<<<<<<< HEAD
 width: fit-content;
 margin: auto;
+=======
+  margin: 10px auto;
+>>>>>>> b0698b25eafe564b30f33a7b2e1cf9d3f1ffa034
 }
 
 .logo {
@@ -96,7 +100,15 @@ margin: auto;
   margin-left: 7%;
 }
 
-
+#message_envoyer{
+  display: block;
+  width: fit-content;
+  color: green;
+  padding: 14px 8px;
+  margin: 25px auto;
+  text-align: center;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
 
 nav {
   display: flex;
@@ -163,6 +175,7 @@ nav .nav-list .nav-link {
 nav .navbar-toggler {
   display: none;
   top: 6%;
+  right: 30px;
   position: absolute;
   height: min-content;
   margin: 18px -10px 0 0;
@@ -458,6 +471,7 @@ p {
 
 .devis input[type="text"],
 .devis input[type="email"],
+.devis input[type="number"],
 .devis textarea {
   width: 100%;
   padding: 10px;
