@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1%;
+  gap: 5%;
 }
 
 .freezer:checked ~ nav .navbar-toggler {
@@ -15,11 +15,16 @@
 .golo {
   position: absolute;
   top: 73%;
-  width: 480px;
+  width: 450px;
+  bottom: 22%;
   margin: auto;
   display: flex;
 }
 
+.apple{
+margin-top: 3%;
+  margin-left: 32%;
+}
 .image-container img:hover {
   z-index: 2;
   transform: scale(1.1);
@@ -32,14 +37,15 @@
   }
 }
 .elec {
-  width: 500px;
+  width: 450px;
+  margin-top: 10%;
 }
 @media screen and (max-width: 991px) {
   .scorpion {
     right: 3%;
   }
   #a-propos {
-    margin-top: 10%;
+    margin-top: 19%;
   }
   #a-propos .content {
     display: block;
@@ -52,7 +58,7 @@
     margin-bottom: 4%;
   }
   .golo {
-    margin-top: 8%;
+    margin-top: 10%;
     position: initial;
     margin-bottom: 10%;
     width: 100%;
@@ -75,7 +81,7 @@
 
 @media screen and (max-width: 450px) {
   #a-propos {
-    margin-top: 14%;
+    margin-top: 22%;
   }
 
   .apple {
