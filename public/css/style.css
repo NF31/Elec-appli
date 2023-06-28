@@ -386,7 +386,7 @@ p {
 /* A propos section*/
 
 #a-propos .container {
-  padding: 40px;
+  padding: 40px 10px;
 }
 
 #a-propos h2 {
