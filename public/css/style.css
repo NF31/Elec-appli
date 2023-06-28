@@ -443,7 +443,7 @@ p {
 /* A propos section*/
 
 #a-propos .container {
-  padding: 40px;
+  padding: 40px 10px;
 }
 
 #a-propos h2 {
@@ -734,6 +734,19 @@ text-align: center;
   .footer-contact {
     margin-left: 0%;
     width: 100%;
+  }
+  .map{
+    height: auto;
+    margin-bottom: 0 !important;
+  }
+  footer{
+    padding: 0 32px;
+  }
+  section{
+    padding: 0 32px;
+  }
+  .titre2{
+    margin-top: 130px;
   }
 }
 @media screen and (max-width: 850px) {
