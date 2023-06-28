@@ -169,12 +169,17 @@ nav .nav-list .nav-link {
 
 nav .navbar-toggler {
   display: none;
-  top: 6%;
-  right: 30px;
+
+
   position: absolute;
-  height: min-content;
-  margin: 18px -10px 0 0;
+ 
+ 
   cursor: pointer;
+
+
+  top: 9%;
+  right: 6%;
+
 }
 
 nav .navbar-toggler .bar {
@@ -715,7 +720,7 @@ text-align: center;
 @media screen and (max-width: 615px) {
   .boss {
     top: 7%;
-    left: 8%;
+    left: -6%;
 }
 
   .logo {
