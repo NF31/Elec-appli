@@ -84,12 +84,8 @@ a {
   justify-content: space-around;
   font-size: 20px;
   text-align: center;
-<<<<<<< HEAD
 width: fit-content;
 margin: auto;
-=======
-  margin: 10px auto;
->>>>>>> b0698b25eafe564b30f33a7b2e1cf9d3f1ffa034
 }
 
 .logo {
@@ -150,10 +146,9 @@ nav .nav-list .nav-link {
 @media screen and  (max-width: 850px) {
 
   nav .nav-list {
-      display: grid;
+      display: block;
       position: absolute;
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 1);
       width: 100%;
       top: -1px;
       left: 0;
