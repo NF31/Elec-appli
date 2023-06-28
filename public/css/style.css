@@ -151,46 +151,97 @@ nav .nav-list .nav-link {
       background: rgba(255, 255, 255, 1);
       width: 100%;
       top: -1px;
-      left: 0;
-      transform: translateY(-100%);
-      transition: .6s;
+      left: 100%;
+    /*  transform: translateY(-100%);*/
+      transition: 0.4s;
   }
 
+  .hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #00bfff;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  
+  nav .nav-list.is-active{
+    left: 0;
+  }
   nav .nav-list .nav-item {
       padding-left: 35px;
   }
 
-  nav .navbar-toggler {
-      display: grid !important;
-      right: 16%;
-  }
+  
+.hamburger {
+  right: 7%;
+  top: 7%;
+	display: block;
+	position: absolute;
+}
+
+  
 
 }
 
 nav .navbar-toggler {
   display: none;
-
-
   position: absolute;
- 
- 
   cursor: pointer;
-
-
   top: 9%;
   right: 6%;
 
 }
 
+
+.hamburger {
+
+	width: 35px;
+	cursor: pointer;
+	
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	color: #ffffff;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+
+
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+
+/*
 nav .navbar-toggler .bar {
   width: 40px;
   height: 5px;
+  position: initial;
   margin-bottom: 10px;
   background: #00b1eb;
   border-radius: 10%;
   transition: .4s;
 }
-
+*/
 .freezer {
   display: none;
 }
@@ -206,7 +257,7 @@ nav .navbar-toggler .bar {
   top: 1%;
   right: 11%;
 }
-
+/*
 .freezer:checked ~ nav .navbar-toggler .bar:nth-child(1) {
   position: absolute;
   transform: rotate(45deg);
@@ -220,7 +271,7 @@ nav .navbar-toggler .bar {
   transform: rotate(-45deg);
 }
 
-
+*/
 /*dark mode */
 .scorpion{
   position: absolute;
@@ -704,6 +755,12 @@ text-align: center;
     left: 50px;
   }
 
+  .is-active {
+    right: 8%;
+    top: 3%;
+    display: block;
+    position: absolute;
+}
  
 #accueil {
     margin-top: 12%;

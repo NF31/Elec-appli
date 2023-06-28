@@ -39,42 +39,57 @@
  </div>
 
  <div class="secondpt">
-   <a href="/" class="boss">
-     <img src='/public/img/elec-appli.png'  alt=""  class="logo"/>
-   </a>
+  <a href="/" class="boss">
+    <img src='/public/img/elec-appli.png'  alt=""  class="logo"/>
+  </a>
 
-   <input type="checkbox" id="toggle" class="freezer">
+  <input type="checkbox" id="toggle" class="freezer">
 
-   <nav>
-     <label class="navbar-toggler" for="toggle">
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
-     </label>
+  <nav>
 
-     <ul class="nav-list">
-         <li class="nav-item">
-           <a href="/" class="pareil">Accueil</a>           
-         </li>
+    <!--
+          <label class="navbar-toggler" for="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    -->
 
-         <li class="nav-item">
-           <a href="./services" class="pareil">Service</a>  
-         </li>
 
-         <li class="nav-item">
-           <a href="./apropos" class="pareil"> À Propos</a> 
-         </li>
+    <ul class="nav-list mobile-nav">
+        <li class="nav-item">
+          <a href="/" class="pareil">Accueil</a>
+           
+      </li>
+        <li class="nav-item">
+          <a href="./services" class="pareil">Services</a>
+            
+        </li>
+        <li class="nav-item">
+          <a href="./apropos" class="pareil"> À Propos</a>
+           
+        </li>
+        <li class="nav-item">
+          <a href="./avis" class="pareil">Avis</a>
+            
+        </li>
+        <li class="nav-item">
+          <a href="./contact" class="pareil">Contact</a>
+        </li>
+    </ul>
 
-         <li class="nav-item">
-           <a href="./avis" class="pareil">Avis</a>  
-         </li>
 
-         <li class="nav-item">
-           <a href="./contact" class="pareil">Contact</a>
-         </li>
-     </ul>
+    <button class="hamburger ">
+      <div class="bar"></div>
+    </button>
+</nav>
 
- </nav>
+
+
+
+ 
+
+</div>  
 </header>
   <% if(typeof message_avis != 'undefined'){ %>
     <div id="message_avis"><%= message_avis %></div>
@@ -154,6 +169,7 @@
           <li><a href="./" class="pareil">Accueil</a></li>
           <li><a href="/services" class="pareil">Services</a></li>
           <li><a href="/apropos" class="pareil"> À Propos</a></li>
+          <li><a href="/avis" class="pareil"> Avis</a></li>
           <li><a href="/contact" class="pareil">Contact</a></li>
         </ul>
       </div>
@@ -169,5 +185,7 @@
       <p>&copy; 2023 ELEC APPLICATION ET INGENIERIE - Tous droits réservés</p>
     </div>
   </footer>
+
+  <script src="/public/js/index.js"></script>
  </body>
  </html>
