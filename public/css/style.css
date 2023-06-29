@@ -388,6 +388,7 @@ p {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
+  margin: 15px auto !important;
   font-weight: bold;
   color: #fff;
   background-color: #333;
@@ -443,13 +444,12 @@ p {
 /* A propos section*/
 
 #a-propos .container {
-  padding: 40px 10px;
+  padding: 10px;
 }
 
 #a-propos h2 {
   font-size: 28px;
-  margin-bottom: 20px;
-  margin-bottom: 5%;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -643,7 +643,7 @@ p {
 }
 
 footer {
-  padding: 48px 32px;
+  padding: 30px;
 }
 
 .foot {
@@ -655,7 +655,11 @@ footer {
 .app {
   width: 250px;
 }
-
+@media screen and (max-width: 900px) {
+  .app {
+    width: 200px;
+  }
+}
 .footer-links {
   margin: auto;
 }
