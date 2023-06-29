@@ -502,13 +502,12 @@ p {
 
 .devis {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
 }
-
 .devis h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -680,7 +679,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 900px) {
  nav{
   line-height: 80px;
  }
@@ -843,7 +842,7 @@ text-align: center;
 
 .devis {
   max-width: 552px;
-  padding: 48px 32px;
+  padding: 12px 30px;
 }
 
 #contact .container {
