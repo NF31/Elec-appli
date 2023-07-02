@@ -734,7 +734,8 @@ text-align: center;
    }
 
    .toof {
-    margin-top: 3%;}
+    margin-top: 3%;
+    padding-bottom: 3%;}
 
   .footer-contact {
     margin-left: 0%;
@@ -789,6 +790,10 @@ text-align: center;
  
   #a-propos h2 {
     margin-top: 6%;}
+
+    .contact-info ul li {
+      margin-bottom: 8%;
+  }
 }
 
 @media screen and (max-width: 615px) {
@@ -838,7 +843,7 @@ text-align: center;
 }
 
 .serv li {
-  margin-bottom: 2%;
+  margin-bottom: 4%;
 }
 
 .devis {
@@ -867,6 +872,11 @@ text-align: center;
     
 .toof li {
   margin-bottom: 6%;
+}
+
+#a-propos p {
+ 
+  margin-bottom: 20%;
 }
 .br {
     line-height: 1.6;}
