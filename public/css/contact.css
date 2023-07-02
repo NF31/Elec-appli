@@ -178,12 +178,17 @@ transition: transform 0.4s, top 0.4s;
     align-self: center;
     justify-content: center;
     cursor: pointer;
-  border-radius: 3px;
-  line-height: 50px;
+    border-radius: 3px;
+    line-height: 50px;
     width: 160px;
     height: 50px;
+<<<<<<< HEAD
     background: #00bfff;;
     margin: auto;
+=======
+    background: #0056b3;
+    margin: 15px auto;
+>>>>>>> dc6b544c28a7b31e758dfc3559bc2a1a1b617dea
     color: #ffffff;
     font-size: 22px;
     text-align: center;
