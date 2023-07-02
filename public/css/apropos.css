@@ -1,6 +1,7 @@
 #a-propos {
   margin-top: 5%;
 }
+
 #a-propos .content {
   display: flex;
   align-items: center;
@@ -16,6 +17,7 @@
   top: 1%;
   right: 5%;
 }
+
 .golo {
   position: absolute;
   top: 73%;
@@ -25,47 +27,46 @@
   display: flex;
 }
 
-.apple{
-margin-top: 3%;
-  margin-left: 32%;
+.apple {
+  display: table;
+ 
 }
+
 .image-container img {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   transition: transform 0.4s, box-shadow 0.4s;
-
 }
+
 .image-container img:hover {
   transform: scale(1.1);
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
   transition: transform 0.4s, box-shadow 0.4s;
+}
 
-}
-@media screen and (max-width: 900px) {
-  .image-container img{
-    width: 95%;
-  }
-}
 .elec {
   width: 450px;
   margin-top: 10%;
 }
+
 @media screen and (max-width: 900px) {
-  .scorpion {
-    right: 3%;
-  }
+ 
   #a-propos {
     margin-top: 19%;
   }
+
   #a-propos .content {
     display: block;
   }
 
+.image-container img {
+    width: 95%;
+  }
   .apple {
     margin-top: 7%;
-
     margin-left: 32%;
     margin-bottom: 4%;
   }
+
   .golo {
     margin-top: 10%;
     position: initial;
@@ -80,6 +81,7 @@ margin-top: 3%;
     top: 1%;
     right: 6%;
   }
+
   .elec {
     width: 100%;
     margin-top: 8%;
@@ -106,5 +108,4 @@ margin-top: 3%;
     width: 100%;
     border-radius: 8px;
   }
-
 }

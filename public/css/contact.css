@@ -182,13 +182,8 @@ transition: transform 0.4s, top 0.4s;
     line-height: 50px;
     width: 160px;
     height: 50px;
-<<<<<<< HEAD
-    background: #00bfff;;
-    margin: auto;
-=======
-    background: #0056b3;
+    background: #111111;
     margin: 15px auto;
->>>>>>> dc6b544c28a7b31e758dfc3559bc2a1a1b617dea
     color: #ffffff;
     font-size: 22px;
     text-align: center;

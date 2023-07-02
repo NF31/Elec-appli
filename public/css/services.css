@@ -4,7 +4,6 @@
   padding: 50px;
   text-align: center;
   margin-bottom: 2%;
-
 }
 
 #services h2 {
@@ -28,10 +27,7 @@
 }
 
 .nc {
-  margin-top: 8%;
-  margin-bottom: 6%;
   display: table;
-    margin: auto;
 }
 
 .gauche,
@@ -55,8 +51,6 @@
 .cf {
   display: none;
 }
-
-/* styles.css */
 
 #why-us {
   margin-top: -8%;
@@ -103,18 +97,12 @@
 }
 
 @media screen and (max-width: 991px) {
-
   .freezer:checked ~ nav .navbar-toggler {
     margin-top: 32px;
     top: 1%;
     right: 9%;
-}
-  .scorpion {
-    position: absolute;
-    right: 7%;
-    width: 40px;
-    top: 10%;
   }
+ 
 
   .cour {
     display: block;
@@ -126,6 +114,7 @@
     width: 85%;
     margin-bottom: 25px;
   }
+
   .gauche,
   .droite {
     border: 2px solid rgba(0, 0, 0, 0.4);
@@ -136,6 +125,7 @@
     margin: auto;
     margin-bottom: 4%;
   }
+
   .cf {
     display: block;
     margin: auto;
@@ -145,7 +135,9 @@
   }
 
   #why-us {
-    margin-top: -2%;}
+    margin-top: -2%;
+  }
+
   .foot {
     display: block;
     text-align: center;
@@ -164,15 +156,15 @@
 
 @media screen and (max-width: 650px) {
   #services {
-    margin-top: 15%;}
+    margin-top: 15%;
+  }
 
-    .tortank{
-      margin-top: 0%;
-    }
-    .container {
- 
+  .tortank {
+    margin-top: 0%;
+  }
+  .container {
     text-align: center;
-}
+  }
   #services p {
     width: 100%;
   }
@@ -185,7 +177,7 @@
   }
 
   .nc {
-        margin-top: 9%;
+    margin-top: 9%;
     margin-bottom: -3%;
   }
 

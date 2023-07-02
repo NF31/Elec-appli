@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="site de elec appli meilleur companie d'éléctricité">
-    <meta name="theme-color" content="#ffffff">
+    <meta
+      name="description"
+      content="site de elec appli meilleur companie d'éléctricité"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!--    ICONS -->
     <link
       rel="stylesheet"
@@ -30,145 +33,122 @@
   <body>
     <header>
       <div class="premierept">
-       <div class="add">
-           <i class="bx bx-map">
-       </i> 
-       <p> 30 rue des Graves bât B, 31780 Castelginest  </p>
-       </div>
-     <div class="add">
-         <i class="bx bx-time">
-       </i>  <p> Dépannage 24h/24et 7j/7.</p>
-     </div>
-     
-       <a href="tel: 07 81 88 21 30" class="phone">
-         <i class="bx bx-phone"></i>
-         <p>06.41.08.58.11</p>
-       </a>
-     </div>
- 
-     <div class="secondpt">
-      <a href="/" class="boss">
-        <img src='/public/img/elec-appli.png'  alt=""  class="logo"/>
-      </a>
+        <div class="add">
+          <i class="bx bx-map"> </i>
+          <p>30 rue des Graves bât B, 31780 Castelginest</p>
+        </div>
+        <div class="add">
+          <i class="bx bx-time"> </i>
+          <p>Dépannage 24h/24et 7j/7.</p>
+        </div>
 
-      <input type="checkbox" id="toggle" class="freezer">
+        <a href="tel: 07 81 88 21 30" class="phone">
+          <i class="bx bx-phone"></i>
+          <p>06.41.08.58.11</p>
+        </a>
+      </div>
 
-      <nav>
+      <div class="secondpt">
+        <a href="/" class="boss">
+          <img src="/public/img/elec-appli.png" alt="" class="logo" />
+        </a>
 
-        <!--
-              <label class="navbar-toggler" for="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        -->
-    
+        <input type="checkbox" id="toggle" class="freezer" />
 
-        <ul class="nav-list mobile-nav">
+        <nav>
+          <ul class="nav-list mobile-nav">
             <li class="nav-item">
               <a href="/" class="pareil">Accueil</a>
-               
-          </li>
+            </li>
             <li class="nav-item">
               <a href="./services" class="pareil">Services</a>
-                
             </li>
             <li class="nav-item">
               <a href="./apropos" class="pareil"> À Propos</a>
-               
             </li>
             <li class="nav-item">
               <a href="./avis" class="pareil">Avis</a>
-                
             </li>
             <li class="nav-item">
               <a href="./contact" class="pareil">Contact</a>
             </li>
-        </ul>
+          </ul>
 
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </nav>
+      </div>
+    </header>
 
-        <button class="hamburger ">
-          <div class="bar"></div>
-        </button>
-    </nav>
-
-
-
-  
-     
-   
-    </div>  
-   </header>
- 
     <section class="contact">
-      
-        <h2 class="titre2">Des questions ? Un besoin ?
-            Contactez-nous !</h2>
+      <h2 class="titre2">Des questions ? Un besoin ? Contactez-nous !</h2>
 
+      <div class="contact-info">
+        <div class="info">
+          <i class="fas fa-map-marker-alt"></i>
 
-            <div class="contact-info">
-                 <div class="info">
-                  <i class="fas fa-map-marker-alt"></i>
-                
-                <h4>Adresse :</h4>
-                  <p><br>
-                   ELEC APPLICATION ET INGENIERIE<br>
-                   30 rue des Graves bât B<br>
-                   31780 Castelginest  </p>
-                </div>
-                <div class="info ho">
-                  <i class="fas fa-clock"></i>
-                  
-                  <h4>
-                    Horaires :
-                  </h4><p><br>
-                    Lun-Jeu : 8h30-12h - 14h30-18h.<br>
-                    Ven : 8h30-12h - 14h30-17h.<br>
-                    Sam-Dim : urgences client seulement.</p>
-                </div>
-                <div class="info">
-                  <i class="fas fa-phone-alt"></i>
-                <h4>Nous joindre :</h4>
-                  <p><br>
-                    06.41.08.58.11  </p>
-                </div>
-              </div>
-  
+          <h4>Adresse :</h4>
+          <p>
+            <br />
+            ELEC APPLICATION ET INGENIERIE<br />
+            30 rue des Graves bât B<br />
+            31780 Castelginest
+          </p>
+        </div>
+        <div class="info ho">
+          <i class="fas fa-clock"></i>
 
-    
+          <h4>Horaires :</h4>
+          <p>
+            <br />
+            Lun-Jeu : 8h30-12h - 14h30-18h.<br />
+            Ven : 8h30-12h - 14h30-17h.<br />
+            Sam-Dim : urgences client seulement.
+          </p>
+        </div>
+        <div class="info">
+          <i class="fas fa-phone-alt"></i>
+          <h4>Nous joindre :</h4>
+          <p>
+            <br />
+            06.41.08.58.11
+          </p>
+        </div>
+      </div>
 
       <div class="map">
         <h2>Contactez-nous</h2>
         <form method="POST">
-           <div>
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
-                  </div>
-                  <div>
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div>
-                    <label for="telephone">Téléphone :</label>
-                    <input type="tel" id="telephone" name="telephone" required>
-                  </div>
-                  <div>
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-                  </div>
-                  <button type="submit" class="clickme">Envoyer !</button> <!-- is j'ai remplacer label par button pour envoyer le formulaire  -->
-                  <% if (typeof message_envoyer !== 'undefined') { %>
-                    <p id="message_envoyer"><%= message_envoyer %></p>  
-                <% } %>  
+          <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required />
+          </div>
+          <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="clickme">Envoyer !</button>
+          <!-- is j'ai remplacer label par button pour envoyer le formulaire  -->
+          <% if (typeof message_envoyer !== 'undefined') { %>
+          <p id="message_envoyer"><%= message_envoyer %></p>
+          <% } %>
         </form>
       </div>
     </section>
 
-  
     <footer>
       <div class="foot">
         <div class="gol">
-          <img src="/public/img/elec-appli.png" alt="" class="app">
+          <img src="/public/img/elec-appli.png" alt="" class="app" />
         </div>
         <div class="footer-links">
           <ul class="toof">
@@ -180,12 +160,10 @@
           </ul>
         </div>
         <div class="footer-contact">
-          
           <p>Adresse : 30 rue des Graves bât B, 31780 Castelginest</p>
-          <p>Téléphone :  06.41.08.58.11</p>
+          <p>Téléphone : 06.41.08.58.11</p>
           <p>Email : fagoua_placide@hotmail.com</p>
         </div>
-     
       </div>
       <div class="footer-bottom">
         <p>&copy; 2023 ELEC APPLICATION ET INGENIERIE - Tous droits réservés</p>
