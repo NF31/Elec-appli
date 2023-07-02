@@ -705,6 +705,7 @@ footer {
     display: table;
     margin: auto;
     margin-top: 4%;
+    margin-bottom: 5%;
 }
 
   .service img {
@@ -786,6 +787,8 @@ text-align: center;
     padding: 0 32px;
   }
  
+  #a-propos h2 {
+    margin-top: 6%;}
 }
 
 @media screen and (max-width: 615px) {
