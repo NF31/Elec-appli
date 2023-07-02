@@ -26,6 +26,7 @@ form div:not(.stars){
 form div label:not(.stars label){
     margin-right: 10px;
     width: 150px;
+    margin-bottom: 2%;
 }
 form div input, textarea{
     display: block;
@@ -37,12 +38,14 @@ form div input, textarea{
     background-color: white;
 }
 .stars{
+    margin-top: 5%;
     width: 200px;
     background-color: #303030;
     padding: 2px 8px;
     border-radius: 4px;
     display: flex;
     align-items: center;
+    margin-bottom: 0%;
     justify-content: center;
 }
 .stars label{
@@ -87,6 +90,10 @@ input[type=submit]:hover{
     margin: 25px auto;
     text-align: center;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.trafalgar{
+    font-size: 30px;
 }
 .full{
     width: 90%;
@@ -155,6 +162,14 @@ input[type=submit]:hover{
         margin: 2px auto;
         border: none;
     }
+
+    .stars{
+        margin: 6% auto;
+    }
+    .trafalgar{
+        margin-top: 7%;
+    font-size:28px;
+}
     #message_avis{
         margin: 150px auto 15px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.45);

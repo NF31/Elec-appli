@@ -782,9 +782,6 @@ text-align: center;
     padding: 0 32px;
   }
  
-
-
- 
 }
 
 @media screen and (max-width: 615px) {
@@ -841,7 +838,10 @@ text-align: center;
   max-width: 552px;
   padding: 48px 32px;
 }
-
+.devis button{
+margin-bottom: -6%;
+margin-top: 9%;
+}
 #contact .container {
   margin-top: -5%;
   text-align: center;
@@ -884,6 +884,7 @@ display: block;}
 @media screen and (max-width: 555px){
   #accueil {
     margin-top: 22%;
+    margin-bottom: 4%;
 }
   .gol {
     margin-bottom: 7%;
@@ -894,6 +895,8 @@ display: block;}
 
 .devis {
   max-width: 93%;
+  margin-top: 6%;
+  margin-bottom: 5%;
 }
 
 
