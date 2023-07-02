@@ -357,6 +357,7 @@ p {
 .dec {
   margin-top: 4%;
   margin-left: 39%;
+  display: table;
 }
 
 /* Animations */
@@ -682,6 +683,12 @@ footer {
   .serv li {
     margin: 0 20px;
   }
+
+  #contact .container {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
   .foot {
     display: block;
     text-align: center;
@@ -701,6 +708,7 @@ footer {
     margin-bottom: 0 !important;
   }
   footer {
+    margin-top: 2%;
     padding: 0 32px;
   }
   section {
