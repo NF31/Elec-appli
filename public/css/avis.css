@@ -72,7 +72,7 @@ input[type=submit]{
     transition: background-color 0.4s, color 0.4s;
 }
 input[type=submit]:hover{
-    background-color: black;
+    background-color: rgb(0, 132, 255);
     color: white;
 }
 #message_avis{

@@ -3,6 +3,8 @@
 #services {
   padding: 50px;
   text-align: center;
+  margin-bottom: 2%;
+
 }
 
 #services h2 {
@@ -28,12 +30,16 @@
 .nc {
   margin-top: 8%;
   margin-bottom: 6%;
+  display: table;
+    margin: auto;
 }
 
 .gauche,
 .droite {
   border: 2px solid rgba(0, 0, 0, 0.4);
   padding: 15px;
+  text-align: center;
+  width: 50%;
 }
 
 .cour h3 {
@@ -53,6 +59,7 @@
 /* styles.css */
 
 #why-us {
+  margin-top: -8%;
   padding: 50px;
   text-align: center;
 }
@@ -137,6 +144,8 @@
     border-radius: 8px;
   }
 
+  #why-us {
+    margin-top: -2%;}
   .foot {
     display: block;
     text-align: center;
