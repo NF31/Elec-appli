@@ -14,7 +14,14 @@ const userRoutes = require('./routes/user')
 const errController = require('./controller/err')
 
 app.use(cors())
-app.use(helmet())
+app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+        'frame-src': ["'self'", "https://www.google.com"]
+      }
+    })
+  );
 
 app.set('view engine', 'ejs')
 
