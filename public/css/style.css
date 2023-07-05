@@ -597,6 +597,7 @@ p {
   height: 400px;
 }
 
+.skyland{padding: 20px;}
 footer {
   padding: 30px;
 }
@@ -758,6 +759,14 @@ footer {
 
   .contact-info ul li {
     margin-bottom: 8%;
+  }
+
+  .skyland iframe{
+    display: block;
+
+margin-left: -31%;
+
+width: 165%;
   }
 }
 
