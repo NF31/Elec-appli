@@ -13,15 +13,15 @@ const app = express()
 const userRoutes = require('./routes/user')
 const errController = require('./controller/err')
 
+const csp = {
+    directives: {
+      defaultSrc: ["'self'", 'https://www.google.com'],
+      frameSrc: ["'self'", 'https://www.google.com'],
+    },
+  };
+
 app.use(cors())
-app.use(
-    helmet.contentSecurityPolicy({
-      directives: {
-        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        'frame-src': ["'self'", "https://www.google.com"]
-      }
-    })
-  );
+app.use(helmet.contentSecurityPolicy(csp));
 
 app.set('view engine', 'ejs')
 
