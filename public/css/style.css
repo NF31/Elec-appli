@@ -172,7 +172,6 @@ nav .nav-list .nav-link {
   nav .nav-list.is-active {
     transform: translateY(0%);
     width: 100%;
-  
   }
 
   nav .nav-list .nav-item {
@@ -469,7 +468,8 @@ p {
   border-radius: 5px;
   text-align: center;
 }
-.devis h2 {
+#a-propos  .devis h2 {
+  margin-top: 2%;
   font-size: 24px;
   margin-bottom: 20px;
 }
