@@ -145,13 +145,15 @@ nav .nav-list .nav-link {
 
 @media screen and (max-width: 850px) {
   nav .nav-list {
+    right: 0%;
+    
+    width: 100%;
+    margin: auto;
     display: block;
     position: absolute;
     background: rgba(255, 255, 255, 1);
-   
     top: 0;
-   /* left: 100%;*/
-      transform: translateY(-100%);
+    transform: translateY(-100%);
     transition: 0.4s;
   }
 
@@ -170,7 +172,7 @@ nav .nav-list .nav-link {
   nav .nav-list.is-active {
     transform: translateY(0%);
     width: 100%;
-    left: 0;
+  
   }
 
   nav .nav-list .nav-item {
